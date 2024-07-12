@@ -29,7 +29,7 @@ export const PROJECTS = [
     image: project3,
     description: "A powerful GWA Calculator web app for the Philippines, enabling you to effortlessly calculate your General Weighted Average!",
     technologies: ["HTML", "CSS", "React"],
-    link: "https://gwa-calculator-liard.vercel.app/",
+    link: "https://gwa-calculator-jesson.vercel.app/",
   },
 ];
 
