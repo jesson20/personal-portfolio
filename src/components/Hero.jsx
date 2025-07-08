@@ -67,7 +67,7 @@ const Hero = () => {
               initial="hidden"
               className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-xl lg:text-2xl tracking-tight text-transparent"
             >
-              Web Developer
+              Computer Science Graduate | Software Engineer
             </motion.span>
             <motion.div
               variants={container(1.2)}
