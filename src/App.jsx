@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import About from'./components/About';
 import Technologies from './components/Technologies';;
 import Projects from './components/Projects';
+import Experiences from './components/Experiences';
 import Contact from './components/Contact';
 
 const App = () => {
@@ -21,12 +22,16 @@ const App = () => {
       <About />
       </div>
 
-      <div id="TSkills">
-      <Technologies />
+      <div id="Experiences">
+      <Experiences />
       </div>
 
       <div id="Projects">
       <Projects />
+      </div>
+
+      <div id="TSkills">
+      <Technologies />
       </div>
 
       <div id="Contact">

@@ -24,7 +24,7 @@ const Navbar = () => {
             <a className=" hover:text-indigo-900 duration-500" href="#TSkills">Skills</a>
             <a className=" hover:text-indigo-900 duration-500" href="#Projects">Projects</a>
             <a className=" hover:text-indigo-900 duration-500" href="#Contact">Contacts</a>
-            <a className="flex items-center gap-1 hover:text-indigo-900 duration-500" href="https://drive.google.com/file/d/1YoSjwMHYgbgnaKpoaGO_i9Ys4qfjDqeV/view?usp=sharing" target="_blank"
+            <a className="flex items-center gap-1 hover:text-indigo-900 duration-500" href="https://drive.google.com/file/d/1gZEK8TB4yX1EjJBjjewgxfyzvouTNVpt/view?usp=sharing" target="_blank"
                rel="noopener noreferrer">Resume <FaExternalLinkAlt /></a>
           </ul>
          
