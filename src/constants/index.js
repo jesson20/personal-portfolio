@@ -1,7 +1,8 @@
 import project1 from "../assets/projects/landsatCloudReclassPlugin.png";
 import project2 from "../assets/projects/todo-listApp.jpg";
-import project3 from "../assets/projects/taxCalculatorApp.jpg";
-import project4 from "../assets/projects/GWACalculatorApp.jpg";
+import project3 from "../assets/projects/airbnbLogo.png";
+import project4 from "../assets/projects/taxCalculatorApp.jpg";
+import project5 from "../assets/projects/GWACalculatorApp.jpg";
 
 export const ABOUT_TEXT = `
 I'm Jesson Maurice Antiporda from the Philippines! I am Detail-oriented Computer Science graduate with hands-on experience in full-stack development, 
@@ -33,16 +34,23 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "React"],
     link:"https://vue-todo-list-blue.vercel.app/",
   },
+ {
+    title: "Airbnb Clone",
+    image: project3,
+    description: "Clone of the Airbnb website, showcasing a responsive design and interactive features.",
+    technologies: ["HTML", "CSS", "React", "Manual UI"],        
+    link:"https://airbnb-clone-tawny-zeta.vercel.app/",
+  },
   {
     title: "Tax Calcualtor App",
-    image: project3,
+    image: project4,
     description: "A comprehensive Tax Calculator web app for the Philippines, helping you easily compute your taxes along with deductions for SSS, Pag-IBIG, and PhilHealth!",
     technologies: ["HTML", "CSS", "React"],
     link: "https://tax-calculator-neon.vercel.app/",
   },
   {
     title: "GWA Calculator App",
-    image: project4,
+    image: project5,
     description: "A powerful GWA Calculator web app for the Philippines, enabling you to effortlessly calculate your General Weighted Average!",
     technologies: ["HTML", "CSS", "React"],
     link: "https://gwa-calculator-jesson.vercel.app/",
