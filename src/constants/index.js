@@ -24,7 +24,7 @@ export const PROJECTS = [
   {
     title: " AI Landsat Cloud Reclass Plugin (Thesis Project)",
     image: project1,
-    description: "A QGIS plugin for reclassifying or removing cloud cover in Landsat images using a modified CycleGAN!(AI)",
+    description: "A QGIS plugin for reclassifying or removing cloud cover in Landsat images using modified CycleGAN(AI)!",
     technologies: ["Python", "PyTorch", "QGIS"],        
     link:"https://docs.google.com/document/d/1XnmEMbv6JrleEyYs1ygPfwa-bxnqsr59cwCT0K5o3PQ/edit?usp=sharing",
   },
