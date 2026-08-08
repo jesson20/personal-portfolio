@@ -3,6 +3,21 @@ import { EXPERIENCES } from "../constants";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
+const renderFormattedText = (text) => {
+  const colonIndex = text.indexOf(':');
+  if (colonIndex !== -1 && colonIndex < 70) {
+    const header = text.slice(0, colonIndex + 1);
+    const body = text.slice(colonIndex + 1);
+    return (
+      <>
+        <strong className="font-semibold text-neutral-200">{header}</strong>
+        {body}
+      </>
+    );
+  }
+  return text;
+};
+
 const renderJobDescription = (jobText) => {
   if (!jobText) return null;
   const lines = jobText.split('\n');
@@ -13,9 +28,13 @@ const renderJobDescription = (jobText) => {
         if (!trimmed) return <div key={idx} className="h-2" />;
 
         if (trimmed.startsWith('•')) {
+          const bulletContent = trimmed.replace(/^•\s*/, '');
           return (
-            <div key={idx} className="font-semibold text-neutral-200 mt-3 mb-1">
-              {trimmed}
+            <div key={idx} className="flex items-start pl-4 my-2">
+              <span className="mr-2 text-purple-400 select-none flex-shrink-0">•</span>
+              <span className="text-neutral-400 leading-relaxed">
+                {renderFormattedText(bulletContent)}
+              </span>
             </div>
           );
         }
@@ -23,15 +42,17 @@ const renderJobDescription = (jobText) => {
         if (trimmed.startsWith('-')) {
           const bulletContent = trimmed.replace(/^-+\s*/, '');
           return (
-            <div key={idx} className="flex items-start pl-4 my-1">
-              <span className="mr-2 text-neutral-400 select-none flex-shrink-0">•</span>
-              <span className="text-neutral-400 leading-relaxed">{bulletContent}</span>
+            <div key={idx} className="flex items-start pl-8 my-1">
+              <span className="mr-2 text-neutral-400 select-none flex-shrink-0">-</span>
+              <span className="text-neutral-400 leading-relaxed">
+                {renderFormattedText(bulletContent)}
+              </span>
             </div>
           );
         }
 
         return (
-          <p key={idx} className="text-neutral-400 my-1 leading-relaxed">
+          <p key={idx} className="text-neutral-300 my-2 leading-relaxed">
             {line}
           </p>
         );
