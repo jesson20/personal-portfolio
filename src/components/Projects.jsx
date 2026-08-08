@@ -3,6 +3,33 @@ import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
+const renderProjectDescription = (descText) => {
+  if (!descText) return null;
+  const lines = descText.split('\n');
+  return (
+    <div className="mb-4">
+      {lines.map((line, idx) => {
+        const trimmed = line.trim();
+        if (!trimmed) return null;
+        if (trimmed.startsWith('•')) {
+          const bulletContent = trimmed.replace(/^•\s*/, '');
+          return (
+            <div key={idx} className="flex items-start pl-4 my-1">
+              <span className="mr-2 text-neutral-400 select-none flex-shrink-0">•</span>
+              <span className="text-neutral-400 leading-relaxed">{bulletContent}</span>
+            </div>
+          );
+        }
+        return (
+          <p key={idx} className="text-neutral-400 my-1 leading-relaxed">
+            {line}
+          </p>
+        );
+      })}
+    </div>
+  );
+};
+
 const Projects = () => {
   return (
     <div className='border-b border-neutral-900 pb-4 lg:pb-20'> 
@@ -39,8 +66,8 @@ const Projects = () => {
                  initial={{ opacity: 0, x: 100 }}
                  transition={{ duration: 1}}
                 className="w-full max-w-xl lg:w-3/4">
-                    <h6 className='mb-2 font-semibold'>{project.title}</h6>
-                    <p className='mb-4 text-neutral-400'>{project.description}</p>
+                    <h6 className='mb-2 font-semibold text-lg text-white'>{project.title}</h6>
+                    {renderProjectDescription(project.description)}
                     <div className='flex flex-wrap'>
                     {project.technologies.map((tech, index) => (
                         <span key={index} className='mr-2 mt-2 lg:mt-4 rounded bg-neutral-900 px-2 py-1 text-sm

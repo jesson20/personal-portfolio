@@ -3,6 +3,43 @@ import { EXPERIENCES } from "../constants";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
+const renderJobDescription = (jobText) => {
+  if (!jobText) return null;
+  const lines = jobText.split('\n');
+  return (
+    <div className="mb-4">
+      {lines.map((line, idx) => {
+        const trimmed = line.trim();
+        if (!trimmed) return <div key={idx} className="h-2" />;
+
+        if (trimmed.startsWith('•')) {
+          return (
+            <div key={idx} className="font-semibold text-neutral-200 mt-3 mb-1">
+              {trimmed}
+            </div>
+          );
+        }
+
+        if (trimmed.startsWith('-')) {
+          const bulletContent = trimmed.replace(/^-+\s*/, '');
+          return (
+            <div key={idx} className="flex items-start pl-4 my-1">
+              <span className="mr-2 text-neutral-400 select-none flex-shrink-0">•</span>
+              <span className="text-neutral-400 leading-relaxed">{bulletContent}</span>
+            </div>
+          );
+        }
+
+        return (
+          <p key={idx} className="text-neutral-400 my-1 leading-relaxed">
+            {line}
+          </p>
+        );
+      })}
+    </div>
+  );
+};
+
 const Experiences = () => {
   return (
     <div className='border-b border-neutral-900 pb-4 lg:pb-20'>
@@ -24,10 +61,11 @@ const Experiences = () => {
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h6 className='mb-1 font-semibold'>{experience.role}</h6>
-              <h6 className='mb-1'>{experience.company}</h6>
-              <h6 className='mb-4'>{experience.date}</h6>
-              <p className='mb-4 text-neutral-400 whitespace-pre-line'>{experience.job}</p>
+              <h6 className='mb-1 font-semibold text-lg text-white'>{experience.role}</h6>
+              <h6 className='mb-1 text-purple-300'>{experience.company}</h6>
+              <h6 className='mb-4 text-neutral-400 text-sm'>{experience.date}</h6>
+              
+              {renderJobDescription(experience.job)}
               
               <div className='flex flex-wrap'>
                 {experience.technologies.map((tech, index) => (

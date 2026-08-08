@@ -1,8 +1,6 @@
-import { FaJava, FaJsSquare, FaPython, FaReact, FaVuejs, FaAngular, FaLaravel  } from "react-icons/fa";
-import { SiC, SiPostgresql, SiCsharp, SiExpress, SiNodedotjs, SiCplusplus, SiPhp  } from "react-icons/si";
+import { FaJava, FaJsSquare, FaPython, FaReact, FaVuejs, FaAngular, FaLaravel, FaDocker, FaGitAlt } from "react-icons/fa";
+import { SiC, SiPostgresql, SiCsharp, SiExpress, SiNodedotjs, SiCplusplus, SiPhp, SiTypescript, SiInertia, SiTailwindcss, SiMysql, SiMongodb, SiPytorch, SiVite, SiPostman, SiVercel } from "react-icons/si";
 import { motion } from "framer-motion";
-
-import {  } from "react-icons/si";
 
 const iconVariants = (duration) => ({
     initial: {y: -10},
@@ -24,7 +22,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0}}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="mt-20 mb-10 lg:mb-20 text-center text-4xl">Technical Skils</motion.h1>
+        className="mt-20 mb-10 lg:mb-20 text-center text-4xl">Technical Skills</motion.h1>
 
         <div className="mb-14">
         <motion.h2
@@ -43,7 +41,7 @@ const Technologies = () => {
             initial="initial"
             animate="animate"
             className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiC className="text-7xl text-white"/>
+                <FaJsSquare className="text-7xl text-yellow-400"/>
             </motion.div>
 
             <motion.div 
@@ -51,14 +49,15 @@ const Technologies = () => {
             initial="initial"
             animate="animate"
             className="rounded-2xl border-4 border-neutral-800 p-4">
-                <FaJava className="text-7xl text-white"/>
+                <SiTypescript className="text-7xl text-blue-500"/>
             </motion.div>
+
             <motion.div 
             variants={iconVariants(5)}
             initial="initial"
             animate="animate"
             className="rounded-2xl border-4 border-neutral-800 p-4">
-                <FaJsSquare className="text-7xl text-white"/>
+                <SiPhp className="text-7xl text-indigo-400"/>
             </motion.div>
 
             <motion.div 
@@ -66,15 +65,15 @@ const Technologies = () => {
             initial="initial"
             animate="animate"
             className="rounded-2xl border-4 border-neutral-800 p-4">
-                <FaPython className="text-7xl text-white"/>
+                <FaPython className="text-7xl text-yellow-300"/>
             </motion.div>
 
             <motion.div 
-            variants={iconVariants(2)}
+            variants={iconVariants(3)}
             initial="initial"
             animate="animate"
             className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiCsharp className="text-7xl text-white"/>
+                <FaJava className="text-7xl text-red-500"/>
             </motion.div>
 
             <motion.div 
@@ -82,15 +81,23 @@ const Technologies = () => {
             initial="initial"
             animate="animate"
             className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiCplusplus className="text-7xl text-white"/>
+                <SiC className="text-7xl text-white"/>
             </motion.div>
 
             <motion.div 
-            variants={iconVariants(3)}
+            variants={iconVariants(2)}
             initial="initial"
             animate="animate"
             className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiPhp className="text-7xl text-white"/>
+                <SiCsharp className="text-7xl text-purple-400"/>
+            </motion.div>
+
+            <motion.div 
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <SiCplusplus className="text-7xl text-blue-400"/>
             </motion.div>
 
             </motion.div>
@@ -101,12 +108,44 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0}}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="mt-20 mb-10 lg:mb-20 text-center text-2xl">Frameworks</motion.h2>
+        className="mt-20 mb-10 lg:mb-20 text-center text-2xl">Frameworks & UI</motion.h2>
         <motion.div 
         whileInView={{ opacity: 1, x: 0}}
         initial={{opacity: 0, x: -100}}
         transition={{ duration: 1.5}}
         className="flex flex-wrap item-center justify-center gap-4">
+
+            <motion.div 
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <FaVuejs className="text-7xl text-emerald-500"/>
+            </motion.div>
+
+            <motion.div 
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <FaReact className="text-7xl text-cyan-400"/>
+            </motion.div>
+
+            <motion.div 
+            variants={iconVariants(4)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <SiInertia className="text-7xl text-purple-400"/>
+            </motion.div>
+
+            <motion.div 
+            variants={iconVariants(2)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <FaLaravel className="text-7xl text-red-600"/>
+            </motion.div>
 
             <motion.div 
             variants={iconVariants(2.5)}
@@ -117,35 +156,27 @@ const Technologies = () => {
             </motion.div>
 
             <motion.div 
+            variants={iconVariants(2)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <SiNodedotjs className="text-7xl text-green-500"/>
+            </motion.div>
+
+            <motion.div 
             variants={iconVariants(3)}
             initial="initial"
             animate="animate"
             className="rounded-2xl border-4 border-neutral-800 p-4">
-                <FaVuejs className="text-7xl text-white"/>
-                <h3 className="hidden text-white">Vue.js</h3>
+                <SiTailwindcss className="text-7xl text-sky-400"/>
             </motion.div>
+
             <motion.div 
             variants={iconVariants(5)}
             initial="initial"
             animate="animate"
             className="rounded-2xl border-4 border-neutral-800 p-4">
-                <FaAngular className="text-7xl text-white"/>
-            </motion.div>
-
-            <motion.div 
-            variants={iconVariants(2)}
-            initial="initial"
-            animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiNodedotjs className="text-7xl text-white"/>
-            </motion.div>
-
-            <motion.div 
-            variants={iconVariants(2)}
-            initial="initial"
-            animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-                <FaLaravel className="text-7xl text-white"/>
+                <FaAngular className="text-7xl text-red-500"/>
             </motion.div>
 
             </motion.div>
@@ -156,7 +187,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0}}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="mt-20 mb-10 lg:mb-20 text-center text-2xl">Libraries</motion.h2>
+        className="mt-20 mb-10 lg:mb-20 text-center text-2xl">Databases & Storage</motion.h2>
         <motion.div 
         whileInView={{ opacity: 1, x: 0}}
         initial={{opacity: 0, x: -100}}
@@ -168,7 +199,23 @@ const Technologies = () => {
             initial="initial"
             animate="animate"
             className="rounded-2xl border-4 border-neutral-800 p-4">
-                <FaReact className="text-7xl"/>
+                <SiPostgresql className="text-7xl text-sky-500"/>
+            </motion.div>
+
+            <motion.div 
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <SiMysql className="text-7xl text-blue-600"/>
+            </motion.div>
+
+            <motion.div 
+            variants={iconVariants(4)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <SiMongodb className="text-7xl text-green-600"/>
             </motion.div>
             
             </motion.div>
@@ -179,7 +226,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0}}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="mt-20 mb-10 lg:mb-20 text-center text-2xl">Database</motion.h2>
+        className="mt-20 mb-10 lg:mb-20 text-center text-2xl">AI/ML, Tools & Operations</motion.h2>
         <motion.div 
         whileInView={{ opacity: 1, x: 0}}
         initial={{opacity: 0, x: -100}}
@@ -191,7 +238,47 @@ const Technologies = () => {
             initial="initial"
             animate="animate"
             className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiPostgresql className="text-7xl"/>
+                <SiPytorch className="text-7xl text-orange-600"/>
+            </motion.div>
+
+            <motion.div 
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <FaDocker className="text-7xl text-blue-500"/>
+            </motion.div>
+
+            <motion.div 
+            variants={iconVariants(3.5)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <FaGitAlt className="text-7xl text-orange-500"/>
+            </motion.div>
+
+            <motion.div 
+            variants={iconVariants(2)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <SiVite className="text-7xl text-purple-400"/>
+            </motion.div>
+
+            <motion.div 
+            variants={iconVariants(4)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <SiPostman className="text-7xl text-orange-500"/>
+            </motion.div>
+
+            <motion.div 
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <SiVercel className="text-7xl text-white"/>
             </motion.div>
             
             </motion.div>
@@ -202,3 +289,4 @@ const Technologies = () => {
 }
 
 export default Technologies
+

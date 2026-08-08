@@ -1,9 +1,10 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import About from'./components/About';
-import Technologies from './components/Technologies';;
+import About from './components/About';
+import Technologies from './components/Technologies';
 import Projects from './components/Projects';
 import Experiences from './components/Experiences';
+import Education from './components/Education';
 import Contact from './components/Contact';
 
 const App = () => {
@@ -26,6 +27,10 @@ const App = () => {
       <Experiences />
       </div>
 
+      <div id="Education">
+      <Education />
+      </div>
+
       <div id="Projects">
       <Projects />
       </div>
@@ -44,4 +49,5 @@ const App = () => {
   );
 };
 
-export default App
+export default App;
+
