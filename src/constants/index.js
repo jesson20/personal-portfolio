@@ -5,21 +5,20 @@ import project4 from "../assets/projects/airbnb_logo.png";
 import project5 from "../assets/projects/taxCalculatorApp.jpg";
 import project6 from "../assets/projects/GWACalculatorApp.jpg";
 
-export const ABOUT_TEXT = `High-impact Full-Stack Software Engineer with proven experience co-leading engineering workflows, architecting multi-tenant SaaS platforms, and building enterprise communication & payment engines. Co-manages full lifecycle development for an enterprise CRM platform—stepping up as core platform maintainer following senior leadership transition. Proficient in JavaScript/TypeScript (Vue 3, React, Inertia.js), PHP (Laravel), Python, and SQL databases. Demonstrated expertise in third-party API integrations (BoldSign, Stripe, DocuSign), polymorphic activity tracking systems, dynamic PDF generation engines, and AI/ML GIS applications. Adept at transforming complex business requirements into scalable, high-availability software solutions.`;
+export const ABOUT_TEXT = `High-impact Full-Stack Software Engineer with experience supporting full-stack engineering workflows, maintaining multi-tenant SaaS systems, and building enterprise communication, document, and payment features. Proficient in JavaScript/TypeScript (Vue 3, React, Inertia.js), PHP (Laravel), Python, and SQL databases. Demonstrated expertise in third-party API integrations, activity tracking systems, dynamic PDF generation, and AI/ML GIS applications. Adept at transforming complex business requirements into scalable, high-availability software solutions.`;
 
 export const EXPERIENCES = [
   {
-    role: "Software Developer / Core Platform Co-Lead",
-    company: "Elluminary / EBOS Cloud Accountants — Davao / Singapore (Remote)",
+    role: "Software Developer",
+    company: "Confidential Company — Remote",
     date: "September 2025 – Present",
-    job: `Co-spearheading end-to-end full-stack development and platform maintenance for an enterprise recruitment & CRM multi-tenant SaaS application. Stepped up to co-lead technical delivery, data model refactoring, and third-party integrations following senior developer departure.
+    job: `Supported full-stack development and platform maintenance for a confidential multi-tenant SaaS application. Public details are intentionally limited to respect client and company confidentiality obligations.
 
-• Omnichannel Communication & Activity Log Engine: Engineered a multi-entity activity tracking system using Vue 3 (Composition API) and Laravel Eloquent polymorphic relationships. Unified candidate outreach, job logs, client contacts, and deals into interactive activity timeline drawers with real-time channel accents, filterable timelines, collaborator tagging, scheduled date/time pickers, and quick-reply note templates.
-• BoldSign E-Signature Integration & Workflow: Led migration from DocuSign to BoldSign e-signature automation. Implemented coordinate-based field placement, automated envelope creation, real-time webhook handlers (sent, sendfailed), local PDF archiving, and ETA 2010 audit trail compliance—resolving edge-case errors and streamlining contract dispatch.
-• Stripe Payment Sync & Customer Auto-Provisioning: Architected end-to-end subscription billing workflows integrating Stripe checkout sync, dynamic currency payment settings (supporting SG Bank Transfer & PayNow), self-healing customer IDs, and strict metadata matching to automate tenant account provisioning upon invoice settlement.
-• CV Formatter & PDF Rendering Engine: Co-architected a template-driven candidate CV formatting platform integrating TinyMCE editor, drag-and-drop experience sorting, custom layout controls, and optimized server-side PDF rendering (Dompdf / wkhtmltopdf) for high-fidelity exports.
-• Multi-Tenant SaaS CRM Architecture: Refactored single-entity database structures into a strict tenant-isolated multi-tenant schema. Built B2B tiered proposal fee engines, SearchableSelect components, and unified experience coding taxonomy systems across clients, candidates, companies, and jobs.`,
-    technologies: ["Vue 3", "Laravel", "Inertia.js", "TypeScript", "BoldSign", "Stripe", "TinyMCE", "PostgreSQL", "RESTful APIs", "WebSockets"],
+• Full-Stack Feature Development: Built and maintained application modules using Vue 3, Laravel, Inertia.js, TypeScript, and SQL-backed data models.
+• Workflow & Integration Support: Implemented third-party API integrations, asynchronous event handling, and internal process automation while following confidentiality constraints.
+• Document & Data Tooling: Developed secure document-generation and data-management features for operational workflows.
+• Multi-Tenant SaaS Maintenance: Assisted with schema improvements, reusable UI components, and tenant-aware application behavior across complex business domains.`,
+    technologies: ["Vue 3", "Laravel", "Inertia.js", "TypeScript", "PostgreSQL", "RESTful APIs", "WebSockets"],
   },
   {
     role: "Web Developer Intern",
