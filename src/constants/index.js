@@ -4,6 +4,7 @@ import project3 from "../assets/projects/weatherIcon.png";
 import project4 from "../assets/projects/airbnb_logo.png";
 import project5 from "../assets/projects/taxCalculatorApp.jpg";
 import project6 from "../assets/projects/GWACalculatorApp.jpg";
+import project7 from "../assets/projects/liftledger.png";
 
 export const ABOUT_TEXT = `High-impact Full-Stack Software Engineer with experience supporting full-stack engineering workflows, maintaining multi-tenant SaaS systems, and building enterprise communication, document, and payment features. Proficient in JavaScript/TypeScript (Vue 3, React, Inertia.js), PHP (Laravel), Python, and SQL databases. Demonstrated expertise in third-party API integrations, activity tracking systems, dynamic PDF generation, and AI/ML GIS applications. Adept at transforming complex business requirements into scalable, high-availability software solutions.`;
 
@@ -32,6 +33,13 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "LiftLedger",
+    image: project7,
+    description: "A workout and routine tracker web application enabling users to log exercises, customize rest timers, track PRs, and build reusable workout templates.",
+    technologies: ["Vue 3", "Tailwind CSS", "Supabase", "Vite"],
+    link: "https://liftledger-eta.vercel.app/home",
+  },
   {
     title: "AI Landsat Cloud Reclass Plugin (Thesis Project)",
     image: project1,
@@ -95,4 +103,3 @@ export const CONTACT = {
   phoneNo: "+63 981 115 9479",
   email: "jessonmaurice.antiporda@gmail.com",
 };
-
