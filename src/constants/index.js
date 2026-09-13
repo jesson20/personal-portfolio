@@ -1,7 +1,6 @@
 import project1 from "../assets/projects/landsatCloudReclassPlugin.png";
 import project2 from "../assets/projects/todo-listApp.jpg";
 import project3 from "../assets/projects/weatherIcon.png";
-import project4 from "../assets/projects/airbnb_logo.png";
 import project5 from "../assets/projects/taxCalculatorApp.jpg";
 import project6 from "../assets/projects/GWACalculatorApp.jpg";
 import project7 from "../assets/projects/liftledger.png";
@@ -69,14 +68,7 @@ export const PROJECTS = [
     link: "https://weather-app-plum-two-84.vercel.app/",
   },
   {
-    title: "Airbnb Clone",
-    image: project4,
-    description: "Clone of the Airbnb website, showcasing a responsive design and interactive features.",
-    technologies: ["HTML", "CSS", "React", "Manual UI"],        
-    link: "https://airbnb-clone-tawny-zeta.vercel.app/",
-  },
-  {
-    title: "Tax Calcualtor App",
+    title: "Tax Calculator App",
     image: project5,
     description: "A comprehensive Tax Calculator web app for the Philippines, helping you easily compute your taxes along with deductions for SSS, Pag-IBIG, and PhilHealth!",
     technologies: ["HTML", "CSS", "React"],
