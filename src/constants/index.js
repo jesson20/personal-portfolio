@@ -12,13 +12,15 @@ export const EXPERIENCES = [
   {
     role: "Software Developer",
     company: "Confidential Company — Remote",
-    date: "September 2025 – Present",
-    job: `Supported full-stack development and platform maintenance for a confidential multi-tenant SaaS application. Public details are intentionally limited to respect client and company confidentiality obligations.
+    date: "September 2025 – September 2026",
+    job: `Co-led full-stack engineering and platform maintenance for a multi-tenant recruitment and CRM SaaS application, taking broader ownership of core system architecture and feature delivery.
 
-• Full-Stack Feature Development: Built and maintained application modules using Vue 3, Laravel, Inertia.js, TypeScript, and SQL-backed data models.
-• Workflow & Integration Support: Implemented third-party API integrations, asynchronous event handling, and internal process automation while following confidentiality constraints.
-• Document & Data Tooling: Developed secure document-generation and data-management features for operational workflows.
-• Multi-Tenant SaaS Maintenance: Assisted with schema improvements, reusable UI components, and tenant-aware application behavior across complex business domains.`,
+• Platform & Architecture Maintenance: Maintained platform continuity, feature delivery, data model refactoring, and integration troubleshooting across Laravel, Vue 3, Inertia.js, and SQL databases.
+• CRM & Activity Aggregation: Improved recruiter and account-manager visibility by consolidating candidate outreach, job logs, client contacts, deals, notes, and scheduled follow-ups into unified activity timelines with real-time filtering.
+• E-Signature Automation: Reduced contract-dispatch friction by migrating e-signature workflows to an automated provider, implementing coordinate-based field placement, envelope automation, webhook status tracking, local PDF archiving, and digital audit-trail compliance.
+• Billing & Payment Integration: Accelerated tenant onboarding and billing operations by integrating multi-currency payment checkout sync, invoice provisioning, local bank transfer support, and metadata-matched customer accounts.
+• Document Exporter: Raised document production consistency by co-architecting a template-driven candidate profile exporter featuring rich-text editing, drag-and-drop experience sorting, configurable layouts, and server-side PDF rendering.
+• Multi-Tenant Schema Design: Strengthened SaaS scalability and multi-tenant data isolation by refactoring legacy single-entity structures into tenant-aware schemas and reusable CRM modules across clients, candidates, companies, and jobs.`,
     technologies: ["Vue 3", "Laravel", "Inertia.js", "TypeScript", "PostgreSQL", "RESTful APIs", "WebSockets"],
   },
   {

@@ -63,12 +63,12 @@ const renderJobDescription = (jobText) => {
 
 const Experiences = () => {
   return (
-    <div className='border-b border-neutral-900 pb-4 lg:pb-20'>
+    <div className='border-b border-neutral-900 pb-12 pt-8 lg:pb-16'>
       <motion.h2 
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className='mt-20 mb-10 lg:mb-20 text-center text-4xl'
+        className='my-10 text-center text-3xl font-bold lg:text-4xl'
       >
         Experiences
       </motion.h2>

@@ -27,13 +27,13 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="mt-28 border-b border-neutral-900 pb-4 lg:mt-48">
-      <div className="flex flex-wrap">
+    <div className="pt-24 pb-12 border-b border-neutral-900 lg:pt-32 lg:pb-20">
+      <div className="flex flex-wrap items-center">
         <div className="w-full lg:w-1/2">
           <div className="flex justify-center">
             <motion.img
               key={currentImageIndex} // trigger animation on image change
-              className="rounded-full lg:rounded-2xl mt-10 max-w-36 lg:max-w-lg"
+              className="rounded-2xl mt-6 w-52 h-52 lg:w-80 lg:h-80 object-cover border border-neutral-800 shadow-xl"
               whileInView={{ x: 0, opacity: 1 }}
               initial={{ x: -100, opacity: 0 }}
               transition={{ duration: 1 }}
@@ -43,13 +43,13 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 pb-8 lg:pb-32 pt-0 lg:pt-10">
-          <div className="flex flex-col items-center lg:items-start pb-10 ">
+        <div className="w-full lg:w-1/2 pb-4 lg:pb-8 pt-6 lg:pt-0">
+          <div className="flex flex-col items-center lg:items-start">
             <motion.h3
               variants={container(0.5)}
               whileInView="visible"
               initial="hidden"
-              className="text-xl text-left font-thin tracking-tight mt-4 lg:mt-28 lg:text-2xl"
+              className="text-lg font-light tracking-tight text-neutral-400 mt-2 lg:text-xl"
             >
               Hello world,
             </motion.h3>
@@ -57,7 +57,7 @@ const Hero = () => {
               variants={container(0.8)}
               whileInView="visible"
               initial="hidden"
-              className="pb-2 text-5xl text-center font-thin tracking-tight mt-1 lg:text-8xl lg:text-left"
+              className="pb-2 text-4xl font-bold tracking-tight mt-1 lg:text-6xl text-center lg:text-left text-white"
             >
               I'm Jesson!
             </motion.h1>
@@ -65,7 +65,7 @@ const Hero = () => {
               variants={container(1)}
               whileInView="visible"
               initial="hidden"
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-xl lg:text-2xl tracking-tight text-transparent"
+              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-xl lg:text-2xl font-semibold tracking-tight text-transparent"
             >
               Software Engineer
             </motion.span>
@@ -73,28 +73,31 @@ const Hero = () => {
               variants={container(1.2)}
               whileInView="visible"
               initial="hidden"
-              className="mt-2 flex items-center justify-center gap-4 lg:pb-60"
+              className="mt-6 flex items-center justify-center gap-5"
             >
               <a
                 href="https://www.linkedin.com/in/jesson-maurice-antiporda-bb5617278/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-indigo-400 transition-colors"
               >
-                <FaLinkedin className="text-xl lg:text-2xl" />
+                <FaLinkedin className="text-2xl lg:text-3xl" />
               </a>
               <a
                 href="https://github.com/jesson20"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-indigo-400 transition-colors"
               >
-                <FaGithub className="text-xl lg:text-2xl" />
+                <FaGithub className="text-2xl lg:text-3xl" />
               </a>
               <a
                 href="https://www.facebook.com/jessonmaurice.antiporda"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-indigo-400 transition-colors"
               >
-                <FaFacebook className="text-xl lg:text-2xl" />
+                <FaFacebook className="text-2xl lg:text-3xl" />
               </a>
             </motion.div>
           </div>
