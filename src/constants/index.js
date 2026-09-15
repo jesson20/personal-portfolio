@@ -37,8 +37,14 @@ export const PROJECTS = [
   {
     title: "LiftLedger",
     image: project7,
-    description: "A workout and routine tracker web application enabling users to log exercises, customize rest timers, track PRs, and build reusable workout templates.",
-    technologies: ["Vue 3", "Tailwind CSS", "Supabase", "Vite"],
+    description: `A social fitness platform and AI-assisted workout tracker built to help users plan, log, and share their training. Users can create reusable routines, track exercises, sets, rest timers, and personal records, then connect with other lifters through profiles, follows, and completed-workout activity.
+• Built a full workout-management flow for reusable routines, custom exercises, live workout sessions, set tracking, rest timers, workout history, and personal-record progress.
+• Developed social features that let users discover lifters, follow profiles, and view completed workouts shared within their network.
+• Created Smart Split, an AI-assisted weekly workout planner that considers schedule availability, session duration, goals, experience, equipment, and priority muscle groups.
+• Designed Smart Split with deterministic programming logic for controlled workout structures, plus Gemini-generated explanations with Groq fallback when Gemini is unavailable.
+• Implemented editable workout previews and explicit save confirmation so AI never automatically replaces or modifies a user’s existing routines.
+• Secured user data with Supabase Authentication, PostgreSQL Row Level Security, ownership-based policies, and server-side Edge Functions for AI provider keys.`,
+    technologies: ["Vue 3", "Supabase", "PostgreSQL", "Vite", "Gemini API", "Groq API"],
     link: "https://liftledger-eta.vercel.app/home",
   },
   {
