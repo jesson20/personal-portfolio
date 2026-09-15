@@ -31,8 +31,8 @@ const Navbar = () => {
             <a className="hover:text-indigo-400 transition-colors duration-300" href="#About">About</a>
             <a className="hover:text-indigo-400 transition-colors duration-300" href="#Experiences">Experiences</a>
             <a className="hover:text-indigo-400 transition-colors duration-300" href="#Projects">Projects</a>
-            <a className="hover:text-indigo-400 transition-colors duration-300" href="#Education">Education</a>
             <a className="hover:text-indigo-400 transition-colors duration-300" href="#TSkills">Skills</a>
+            <a className="hover:text-indigo-400 transition-colors duration-300" href="#Education">Education</a>
             <a className="hover:text-indigo-400 transition-colors duration-300" href="#Contact">Contacts</a>
             <a className="flex items-center gap-1.5 hover:text-indigo-400 transition-colors duration-300" href="https://drive.google.com/file/d/1GXCDHf12ZUEn9Fy146S5IvqFkpW7J_PN/view?usp=sharing" target="_blank"
                rel="noopener noreferrer">Resume <FaExternalLinkAlt className="text-xs" /></a>
@@ -84,10 +84,10 @@ const Navbar = () => {
             <a href="#Projects" className="block text-center w-full hover:text-indigo-400" onClick={toggleMenu}>Projects</a>
           </li>
           <li className="py-2">
-            <a href="#Education" className="block text-center w-full hover:text-indigo-400" onClick={toggleMenu}>Education</a>
+            <a href="#TSkills" className="block text-center w-full hover:text-indigo-400" onClick={toggleMenu}>Skills</a>
           </li>
           <li className="py-2">
-            <a href="#TSkills" className="block text-center w-full hover:text-indigo-400" onClick={toggleMenu}>Skills</a>
+            <a href="#Education" className="block text-center w-full hover:text-indigo-400" onClick={toggleMenu}>Education</a>
           </li>
           <li className="py-2">
             <a href="#Contact" className="block text-center w-full hover:text-indigo-400" onClick={toggleMenu}>Contacts</a>

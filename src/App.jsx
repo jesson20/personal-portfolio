@@ -31,12 +31,12 @@ const App = () => {
       <Projects />
       </div>
 
-      <div id="Education">
-      <Education />
-      </div>
-
       <div id="TSkills">
       <Technologies />
+      </div>
+
+      <div id="Education">
+      <Education />
       </div>
 
       <div id="Contact">
