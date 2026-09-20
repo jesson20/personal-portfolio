@@ -48,16 +48,37 @@ export const PROJECTS = [
     link: "https://liftledger-eta.vercel.app/home",
   },
   {
-    title: "AI Landsat Cloud Reclass Plugin (Thesis Project)",
+    title: "TerraClear — Satellite Restoration",
     image: project1,
-    description: `Developed an AI-powered QGIS plugin to automate cloud removal from satellite imagery, enabling clearer land cover analysis for agriculture and environmental monitoring.
-• Engineered plugin architecture using Python, QGIS API, and Qt Designer UI with real-time previews.
-• Architected a hybrid AI pipeline with a U-Net model for cloud detection and modified CycleGAN for context-aware inpainting on Landsat 8 data.
-• Achieved 57% reconstruction accuracy and outperformed traditional methods by 25% in image clarity (SSIM/PSNR).
-• Integrated models into a production-ready tool using PyTorch and GDAL, automating workflows from clip to final cloud-free export.
-• Validated through user testing, achieving a 90% satisfaction rate.`,
-    technologies: ["Python", "PyTorch", "QGIS", "Qt Designer", "GDAL"],        
-    link: "https://docs.google.com/document/d/1XnmEMbv6JrleEyYs1ygPfwa-bxnqsr59cwCT0K5o3PQ/edit?usp=sharing",
+    description: `Rebuilt my university Landsat cloud-removal thesis from an experimental QGIS plugin into a full-stack web application that processes real Landsat 8/9 satellite imagery, detects cloud-obscured pixels, reconstructs them using real cloud-free observations from nearby acquisition dates, and preserves pixel-level source provenance.
+
+TerraClear began as our university thesis, originally built as a QGIS plugin using Python, PyTorch, U-Net, and a modified CycleGAN. The original thesis demonstrated the concept, but custom AI models were limited by training dataset size and quality. I later rebuilt the project from the ground up as a modern web application working directly with real Landsat 8/9 Collection 2 Level-2 satellite data and official QA_PIXEL metadata.
+
+• Rebuilt an academic QGIS thesis prototype into a full-stack satellite restoration web application using Next.js and FastAPI.
+• Integrated real Landsat 8/9 Collection 2 Level-2 imagery through Microsoft Planetary Computer STAC.
+• Implemented official Landsat QA_PIXEL decoding for clouds, cloud shadows, cirrus, fill, and confidence information.
+• Built temporal cloud reconstruction that searches nearby Landsat dates and replaces obscured pixels only with real QA-clear satellite observations.
+• Added pixel-level provenance so reconstructed pixels can be traced to their exact source scene and acquisition date.
+• Implemented Original, Cloud Mask, Temporal Composite, Source Layer, and NDVI visualization modes.
+• Added Original Target NDVI and Temporal Composite NDVI using real Red and NIR Surface Reflectance data.
+• Added GIS-ready exports for restored Surface Reflectance, NDVI, cloud masks, provenance rasters, and PNG previews.
+• In a validated Bohol test AOI (target scene LC09_L2SP_113053_20240222_02_T1, 92.62% cloud obstruction / 19,940 pixels), TerraClear recovered all 19,940 QA-obstructed pixels using real observations from nearby Landsat acquisition dates, expanding NDVI coverage from 7.38% to 100%.`,
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Python",
+      "FastAPI",
+      "Rasterio",
+      "NumPy",
+      "MapLibre GL",
+      "Microsoft Planetary Computer",
+      "Landsat 8/9",
+      "STAC"
+    ],
+    github: "https://github.com/jesson20/terraclear",
+    link: "https://terraclear.vercel.app/",
   },
   {
     title: "To-do List App",

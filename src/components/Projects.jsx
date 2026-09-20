@@ -1,7 +1,7 @@
 import React from 'react'
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
 const renderProjectDescription = (descText) => {
   if (!descText) return null;
@@ -48,18 +48,29 @@ const Projects = () => {
                  transition={{ duration: 1 }}
                 className="w-full lg:w-1/4">
                     
-                    <a
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-            <img src={project.image} 
-                    width={150}
-                    height={150}
-                    alt={project.title}
-                    className="mb-6 rounded"
-                    
-                    /></a>
+                    {project.link || project.github ? (
+                      <a
+                        href={project.link || project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img 
+                          src={project.image} 
+                          width={240}
+                          height={150}
+                          alt={project.title}
+                          className="mb-6 rounded w-full max-w-[220px] lg:max-w-[240px] h-auto object-cover border border-neutral-800"
+                        />
+                      </a>
+                    ) : (
+                      <img 
+                        src={project.image} 
+                        width={240}
+                        height={150}
+                        alt={project.title}
+                        className="mb-6 rounded w-full max-w-[220px] lg:max-w-[240px] h-auto object-cover border border-neutral-800"
+                      />
+                    )}
                 </motion.div>
                 <motion.div 
                  whileInView={{ opacity: 1, x: 0}}
@@ -76,16 +87,24 @@ const Projects = () => {
                         </span>
                     ))}
                     </div>
-                    <div className='flex flex-wrap mt-3 '>
-                    <a
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
-           className='flex items-center gap-1 rounded bg-neutral-900 px-2 py-1 text-sm
-                        font-medium text-white'
-        > Live Demo <FaExternalLinkAlt /></a>
-        
-        </div>
+                    <div className='flex flex-wrap mt-3 gap-2'>
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='flex items-center gap-1 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-white hover:text-purple-400 transition-colors'
+                      > <FaGithub /> GitHub</a>
+                    )}
+                    {project.link && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='flex items-center gap-1 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-white hover:text-purple-400 transition-colors'
+                      > Live Demo <FaExternalLinkAlt /></a>
+                    )}
+                    </div>
                 </motion.div>
             </div>
         ))}
