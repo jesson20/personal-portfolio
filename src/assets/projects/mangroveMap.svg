@@ -1,0 +1,19 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="86" y1="34" x2="1087" y2="729" gradientUnits="userSpaceOnUse"><stop stop-color="#063B31"/><stop offset="1" stop-color="#0B201E"/></linearGradient>
+    <linearGradient id="leaf" x1="837" y1="112" x2="1047" y2="351" gradientUnits="userSpaceOnUse"><stop stop-color="#C6ED77"/><stop offset="1" stop-color="#79B85A"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#001A14" flood-opacity=".38"/></filter>
+  </defs>
+  <rect width="1200" height="750" rx="34" fill="url(#bg)"/>
+  <path d="M0 548C147 473 217 602 362 525C502 450 576 507 713 446C859 381 962 394 1200 283V750H0V548Z" fill="#0E5140" fill-opacity=".55"/>
+  <path d="M0 596C159 518 263 657 415 574C555 497 683 560 825 488C966 417 1083 436 1200 384" stroke="#8CCF6D" stroke-opacity=".24" stroke-width="3"/>
+  <path d="M0 642C178 555 286 701 453 616C609 536 714 626 872 539C1002 467 1107 480 1200 434" stroke="#BFE978" stroke-opacity=".16" stroke-width="3"/>
+  <g filter="url(#shadow)"><path d="M914 93C991 89 1064 144 1075 221C1086 298 1030 365 953 376C876 387 809 331 798 254C787 177 837 104 914 93Z" fill="url(#leaf)"/><path d="M924 149L903 277H939L947 232L961 277H998L968 149H924Z" fill="#073B31"/></g>
+  <g stroke="#B6DD76" stroke-linecap="round"><path d="M799 532C813 432 835 370 887 302" stroke-width="13"/><path d="M819 487C766 442 724 423 662 414" stroke-width="10"/><path d="M835 449C891 412 945 390 1007 393" stroke-width="10"/><path d="M801 533C769 566 747 599 734 641" stroke-width="9"/><path d="M816 532C855 564 875 603 885 646" stroke-width="9"/><path d="M843 480C896 470 947 478 997 504" stroke-width="7"/></g>
+  <g fill="#91C968"><ellipse cx="668" cy="410" rx="35" ry="15" transform="rotate(12 668 410)"/><ellipse cx="733" cy="423" rx="37" ry="16" transform="rotate(29 733 423)"/><ellipse cx="1009" cy="392" rx="39" ry="17" transform="rotate(-4 1009 392)"/><ellipse cx="950" cy="390" rx="36" ry="15" transform="rotate(-24 950 390)"/><ellipse cx="1000" cy="506" rx="35" ry="15" transform="rotate(23 1000 506)"/></g>
+  <rect x="80" y="90" width="68" height="68" rx="20" transform="rotate(-12 80 90)" fill="#BDE878"/><path d="M102 111L96 143H106L109 130L113 143H123L115 111H102Z" fill="#073B31"/>
+  <text x="174" y="119" fill="#F2F5E9" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="3">MANGROVE</text><text x="174" y="147" fill="#BDE878" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="3">MAP</text>
+  <text x="80" y="305" fill="#C3EB79" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">PHILIPPINE MANGROVE FORESTS · WEB GIS</text>
+  <text x="80" y="392" fill="#F6F5E9" font-family="Georgia, serif" font-size="78" font-weight="700">Explore. Understand.</text><text x="80" y="476" fill="#F6F5E9" font-family="Georgia, serif" font-size="78" font-weight="700">Protect.</text>
+  <text x="82" y="539" fill="#D6E2C4" font-family="Arial, sans-serif" font-size="25">An interactive conservation map for discovering</text><text x="82" y="573" fill="#D6E2C4" font-family="Arial, sans-serif" font-size="25">the mangrove ecosystems of the Philippines.</text>
+</svg>

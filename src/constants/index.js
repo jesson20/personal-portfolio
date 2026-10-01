@@ -4,6 +4,7 @@ import project3 from "../assets/projects/weatherIcon.png";
 import project5 from "../assets/projects/taxCalculatorApp.jpg";
 import project6 from "../assets/projects/GWACalculatorApp.jpg";
 import project7 from "../assets/projects/liftledger.png";
+import project8 from "../assets/projects/mangroveMap.svg";
 
 export const ABOUT_TEXT = `High-impact Full-Stack Software Engineer with experience supporting full-stack engineering workflows, maintaining multi-tenant SaaS systems, and building enterprise communication, document, and payment features. Proficient in JavaScript/TypeScript (Vue 3, React, Inertia.js), PHP (Laravel), Python, and SQL databases. Demonstrated expertise in third-party API integrations, activity tracking systems, dynamic PDF generation, and AI/ML GIS applications. Adept at transforming complex business requirements into scalable, high-availability software solutions.`;
 
@@ -107,6 +108,15 @@ TerraClear began as our university thesis, originally built as a QGIS plugin usi
     description: "A powerful GWA Calculator web app for the Philippines, enabling you to effortlessly calculate your General Weighted Average!",
     technologies: ["HTML", "CSS", "React"],
     link: "https://gwa-calculator-jesson.vercel.app/",
+  },
+  {
+    title: "Mangrove Map",
+    image: project8,
+    description:
+      "A conservation-focused Web GIS for exploring Philippine mangrove ecosystems. Search cities, filter coverage by province, inspect map details, and compare habitats with satellite imagery.",
+    technologies: ["React", "Vite", "OpenLayers", "GeoJSON", "JavaScript", "CSS"],
+    github: "https://github.com/jesson20/ITE-18-WEBGIIS-GROUP-2",
+    link: "https://mangrove-map-five.vercel.app/",
   },
 ];
 
